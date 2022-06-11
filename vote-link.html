@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
+      * {
+        font-family: "ABeeZee", sans-serif;
+      }
+
+      .sheet {
+        background-color: #fff;
+        color: #000;
+      }
+
+      br,
+      .banner,
+      .content,
+      .footer {
+        margin: 10px 0;
+      }
+
+      .content {
+        border-top: 1.3px solid #f2f2f2;
+        border-bottom: 1.3px solid #f2f2f2;
+      }
+
+      .content > p {
+        padding: 10px 0;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sheet">
+      <div class="banner">
+        <img src="logo-color.svg" contain alt="polyticks-logo" height="25" />
+      </div>
+
+      <div class="content">
+        <p>Hello,</p>
+
+        <p>
+          {{agent_or_organization_name}}({{agent_or_organization_email_address}})
+          invited you to participate in {{poll_name}} which starts on
+          {{start_date}} and ends on {{end_date}}.
+        </p>
+
+        <p>
+          You may participate by clicking the link below or copying and pasting
+          in your browser:<br />
+          <a href="">vote link</a>
+        </p>
+
+        <p>
+          Clicking the link will lead you to a page that asks for your
+          credentials. Use the credentials below to get access to the poll and
+          vote.
+        </p>
+
+        <ul>
+          <li>index number: {{index_number}}</li>
+          <li>pass key: {{pass_key}}</li>
+        </ul>
+
+        <p>
+          If you do not wish to participate in this poll, please ignore this
+          email.
+        </p>
+        <p>
+          You can get in touch with us by sending us an email at
+          <a href="mailto:polyticks.app@gmail.com">polyticks.app@gmail.com</a>.
+          We're here to help you at any step along the way.
+        </p>
+
+        <p>- The Polyticks team</p>
+      </div>
+
+      <div class="footer">
+        <p>
+          <img src="logo-color.svg" contain alt="polyticks-logo" height="25" />
+        </p>
+        <p>&copy; Polyticks, Accra - Ghana</p>
+      </div>
+    </div>
+  </body>
+</html>
